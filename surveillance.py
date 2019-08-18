@@ -32,7 +32,7 @@ def index():
 
 @app.route("/left_side")
 def left_side():
-    data1 = "LEFT"
+    print("LEFT")
     GPIO.output(m11, 0)
     GPIO.output(m12, 0)
     GPIO.output(m21, 1)
@@ -42,7 +42,7 @@ def left_side():
 
 @app.route('/right_side')
 def right_side():
-    data1 = "RIGHT"
+    print("RIGHT")
     GPIO.output(m11, 1)
     GPIO.output(m12, 0)
     GPIO.output(m21, 0)
@@ -52,7 +52,7 @@ def right_side():
 
 @app.route('/up_side')
 def up_side():
-    data1 = "FORWARD"
+    print("FORWARD")
     GPIO.output(m11, 1)
     GPIO.output(m12, 0)
     GPIO.output(m21, 1)
@@ -62,7 +62,7 @@ def up_side():
 
 @app.route('/down_side')
 def down_side():
-    data1 = "BACK"
+    print("BACK")
     GPIO.output(m11, 0)
     GPIO.output(m12, 1)
     GPIO.output(m21, 0)
@@ -72,7 +72,7 @@ def down_side():
 
 @app.route('/stop')
 def stop():
-    data1 = "STOP"
+    print("STOP")
     GPIO.output(m11, 0)
     GPIO.output(m12, 0)
     GPIO.output(m21, 0)
